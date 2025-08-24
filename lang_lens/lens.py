@@ -13,6 +13,8 @@ class Lens:
         self.text_store = text_store
         self.axis_discovery = axis_discovery
 
+        self.axis_discovery.discover(self.text_store)
+
     def inspect(self, query_vec: np.array):
         projection = self.axis_discovery.transform(query_vec)
         inspection = Inspection(

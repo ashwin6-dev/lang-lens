@@ -12,3 +12,7 @@ class Inspection:
         self.vector = vector
         self.axes = axes
         self.projection = projection
+
+
+    def __repr__(self):
+        return f"Inspection(vector={self.vector}, axes={self.axes}, projection={self.projection})"
